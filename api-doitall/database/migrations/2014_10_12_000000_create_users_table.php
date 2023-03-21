@@ -34,7 +34,7 @@ return new class extends Migration
             $table->string('lastemail')->default(0);
             $table->string('verification_code')->default(0);
             $table->string('forgotpassword_code')->default(0);
-            $table->timestamp('email_verified_at')->default(0);
+            $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->uuid('uid')->default(0);
             //
